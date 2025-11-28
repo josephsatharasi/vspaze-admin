@@ -34,7 +34,6 @@ const AdminLogin = () => {
           user: response.data.user
         }));
         navigate('/admin');
-        window.location.reload();
         return;
       }
     } catch (error) {
@@ -55,7 +54,6 @@ const AdminLogin = () => {
         }
       }));
       navigate('/admin');
-      window.location.reload();
     } else {
       setError('Invalid credentials. Access denied.');
     }
